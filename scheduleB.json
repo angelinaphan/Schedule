@@ -1,0 +1,7 @@
+[
+    {"Class_Name": "Applied Art", "Teacher_Name": "Ms. Roth","Room_Number": "A103","Days": "B, C, D, F, G"},
+    {"Class_Name": "Honors NJIT Advanced Web", "Teacher_Name": "Mrs. Herbert","Room_Number": "B114","Days": "A, B, D, E, F"},
+    {"Class_Name": "Lab Forensic Science", "Teacher_Name": "Mrs. Nolan","Room_Number": "E208","Days": "A, C, D, E, G"},
+    {"Class_Name": "BCC English 155 : The Short Story", "Teacher_Name": "Mrs. Lomovsky","Room_Number": "E107","Days": "A, B, D, E, G"},
+    {"Class_Name": "Physical ED 12", "Teacher_Name": "Mrs. Hastings","Room_Number": "GYM 6","Days": "A, B, D, F, G"}
+]

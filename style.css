@@ -1,16 +1,87 @@
 body {
+    background-color: #748CAB;
+}
+
+table { 
+    margin: 0 auto; 
+    font-size: large; 
+    border: 1px solid #1D2D44; 
+} 
+
+h1 { 
+    text-align: center; 
+    color:#F0EBD8; 
+    font-size: xx-large; 
+    font-family: 'Gill Sans',  
+        'Gill Sans MT', ' Calibri',  
+        'Trebuchet MS', 'sans-serif'; 
+} 
+
+td { 
+    background-color: #748CAB; 
+    border: 1px solid #3E5C76; 
+} 
+
+th, 
+td { 
+    font-weight: bold; 
+    border: 1px solid #3E5C76; 
+    padding: 20px; 
+    text-align: center; 
+    color: #1D2D44;
+} 
+
+td { 
+    font-weight: lighter; 
+} 
+
+/* button */
+.dropbtn {
+    background-color: #685044;
+    color: #F0EBD8;
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropbtn:hover {
     background-color: #3A405A;
-}
+  }
+  
+  .dropdown {
+    position: relative;
+    
+    margin: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .dropdown-content {
+    display: none;
+    overflow: auto;
+  }
 
-.name {
-    text-align: center;
-    padding: 10px;
-    color: #F9DEC9;
-}
+  .show {display: block;}
 
-button {
-    background-color: #99B2DD;
-    padding: 5px;
-    color: #F9DEC9;
-    font-size: 20px;
-}
+
+  /* button 2 */
+  .button-container {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  button {
+    background-color: #685044;
+    color: #F0EBD8;
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+    margin: 40px;
+  }
+
+  button:hover {
+    background-color: #3A405A;
+  }

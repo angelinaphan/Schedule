@@ -1,18 +1,84 @@
-$(document).ready(function () {
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
 
-    $.getJSON( "schedule.json", function() {
-    })
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  };
 
-    $.each( data.schedule, function(i, schedule) {
-        console.log(schedule);
-    })
-  });
+  // A DAY
+  $(document).ready(function () { 
 
-  $("p").click(function(){
-    // action goes here!!
-  });                              
+    // FETCHING DATA FROM JSON FILE 
+    $.getJSON("schedule.json",  
+            function (data) { 
+        var student = ''; 
 
-// https://stackoverflow.com/questions/56822076/fetching-json-data-to-html-table-onclick-button
-// https://www.geeksforgeeks.org/jquery-getjson-method/
-// https://www.javatpoint.com/jquery-getjson-method
-// https://www.geeksforgeeks.org/how-to-fetch-data-from-json-file-and-display-in-html-table-using-jquery/
+        // ITERATING THROUGH OBJECTS 
+        $.each(data, function (key, value) { 
+
+            //CONSTRUCTION OF ROWS HAVING 
+            // DATA FROM JSON OBJECT 
+            student += '<tr>'; 
+            student += '<td>' +  
+                value.Class_Name + '</td>'; 
+
+            student += '<td>' +  
+                value.Teacher_Name + '</td>'; 
+
+            student += '<td>' +  
+                value.Room_Number + '</td>'; 
+
+            student += '<td>' +  
+                value.Days + '</td>'; 
+
+            student += '</tr>'; 
+        }); 
+
+        //INSERTING ROWS INTO TABLE  
+        $('#table').append(student); 
+    }); 
+}); 
+
+// B DAY 
+$(document).ready(function () { 
+
+  // FETCHING DATA FROM JSON FILE 
+  $.getJSON("scheduleB.json",  
+          function (data) { 
+      var student = ''; 
+
+      // ITERATING THROUGH OBJECTS 
+      $.each(data, function (key, value) { 
+
+          //CONSTRUCTION OF ROWS HAVING 
+          // DATA FROM JSON OBJECT 
+          student += '<tr>'; 
+          student += '<td>' +  
+              value.Class_Name + '</td>'; 
+
+          student += '<td>' +  
+              value.Teacher_Name + '</td>'; 
+
+          student += '<td>' +  
+              value.Room_Number + '</td>'; 
+
+          student += '<td>' +  
+              value.Days + '</td>'; 
+
+          student += '</tr>'; 
+      }); 
+
+      //INSERTING ROWS INTO TABLE  
+      $('#table1').append(student); 
+  }); 
+}); 
