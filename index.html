@@ -17,36 +17,55 @@
 
 </head> 
 
-<section> 
+<body>
+
 <br>
-    <section> 
-        <h1>Interactive Class Schedule</h1> 
+<h1>Interactive Class Schedule</h1> 
 
-<div class="button-container">
-    <button onclick="myFunction()" class="dropbtn">A</button>
-    <div id="myDropdown" class="dropdown-content">
 
-        <table id='table'> 
-            <tr> 
-                <th>Class Name</th> 
-                <th>Teacher Name</th> 
-                <th>Room Number</th> 
-                <th>Days</th> 
-            </tr> 
-        </table>
-     </div>
-</div>
-    </section> 
+<button onClick="toggleTable()">A</button>
+<table id="myTable" style="width:50%" class="hidden">
+  <tr>
+    <th>Teacher's Name</th>
+    <th>Class</th> 
+    <th>Room Number</th>
+    <th>Days</th>
+  </tr>
 
-    <div class="button-container">
-        <button>A</button>
-        <button>B</button>
-        <button>C</button>
-        <button>D</button>
-        <button>E</button>
-        <button>F</button>
-        <button>G</button>
-      </div>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td> 
+    <td>50</td>
+    <td>Age</td>
+  </tr>
+  
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td> 
+    <td>94</td>
+    <td>Age</td>
+  </tr>
+
+</table>
+
+<button onClick="toggleTable1()">B</button>
+<table id="myTable1" style="width:50%" class="hidden">
+    <tr>
+        <th>Teacher's Name</th>
+        <th>Class</th> 
+        <th>Room Number</th>
+        <th>Days</th>
+      </tr>
+
+  <tr>
+    <td>Honors</td>
+    <td>Smith</td> 
+    <td>50</td>
+    <td>Age</td>
+  </tr>
+  
+
+</table>
 
 </body> 
 </html> 

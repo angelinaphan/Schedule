@@ -1,5 +1,13 @@
-body {
+.hidden {
+
+    display: none;
+  
+  }
+
+  body {
     background-color: #748CAB;
+    align-items: center;
+    justify-content: center;
 }
 
 table { 
@@ -35,53 +43,7 @@ td {
     font-weight: lighter; 
 } 
 
-/* button */
-.dropbtn {
-    background-color: #685044;
-    color: #F0EBD8;
-    padding: 20px;
-    font-size: 16px;
-    border: none;
-  }
-  
-  .dropbtn:hover {
-    background-color: #3A405A;
-  }
-  
-  .dropdown {
-    position: relative;
-    
-    margin: 40px;
+button {
     align-items: center;
     justify-content: center;
-    display: flex;
-  }
-  
-  .dropdown-content {
-    display: none;
-    overflow: auto;
-  }
-
-  .show {display: block;}
-
-
-  /* button 2 */
-  .button-container {
-    display: flex;
-    padding: 20px;
-    align-items: center;
-    justify-content: center;
-  }
-
-  button {
-    background-color: #685044;
-    color: #F0EBD8;
-    padding: 20px;
-    font-size: 16px;
-    border: none;
-    margin: 40px;
-  }
-
-  button:hover {
-    background-color: #3A405A;
-  }
+}
